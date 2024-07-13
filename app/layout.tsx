@@ -1,11 +1,11 @@
 "use client";
 import "../styles/globals.css";
-import { Poppins } from "next/font/google";
+import { Inter } from "next/font/google";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import { ThemeProvider } from "next-themes";
 
-const poppins = Poppins({ subsets: ["latin"], weight: "400" });
+const poppins = Inter({ subsets: ["latin"], weight: "400", display: "swap" });
 
 export default function RootLayout({
   children,
