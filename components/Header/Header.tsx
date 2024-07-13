@@ -1,11 +1,10 @@
+import { useTheme } from "next-themes";
 import Link from "next/link";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 
-interface Props {
-  toggleTheme: () => void;
-}
+export default function Header() {
+  const { theme, setTheme } = useTheme()
 
-export default function Header({ toggleTheme }: Props) {
   return (
     <header className="bg-gray-200 py-4 px-8 top-0 w-full dark:bg-gray-900 transition duration-200">
       <nav className="container mx-auto flex justify-between items-center">
@@ -25,7 +24,7 @@ export default function Header({ toggleTheme }: Props) {
           <li className="hover:font-bold">
             <BsFillMoonStarsFill
               className="cursor-pointer text-2xl dark:text-yellow-400 hover:scale-125 ease-in-out duration-200"
-              onClick={toggleTheme}
+              onClick={() => setTheme(theme === "light" ? "dark" : "light")}
             />
           </li>
         </ul>

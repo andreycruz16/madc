@@ -1,4 +1,3 @@
-import Link from "next/link";
 export default function Root() {
   return (
     <main className="container mx-auto h-screen dark:text-gray-100">
