@@ -5,7 +5,7 @@ import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import { ThemeProvider } from "next-themes";
 
-const poppins = Inter({ subsets: ["latin"], weight: "400", display: "swap" });
+const inter = Inter({ subsets: ["latin"], weight: "400", display: "swap" });
 
 export default function RootLayout({
   children,
@@ -19,7 +19,7 @@ export default function RootLayout({
         <meta name="description" content="An MADC project" />
       </head>
       <body
-        className={`${poppins.className} dark:bg-gray-700 transition duration-200`}
+        className={`${inter.className} dark:bg-gray-700 transition duration-200`}
       >
         <ThemeProvider attribute="class">
           <Header />
