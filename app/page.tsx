@@ -1,7 +1,7 @@
 export default function Root() {
   return (
     <main className="">
-      Root Page
+      Home Page
     </main>
   );
 }
