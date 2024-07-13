@@ -1,18 +1,18 @@
 import Link from "next/link";
 export default function Root() {
   return (
-    <main className="container mx-auto h-screen">
-      <div className="text-2xl uppercase font-bold py-4">All Apps</div>
+    <main className="container mx-auto h-screen dark:text-gray-100">
+      <h1 className="text-3xl uppercase font-bold p-4">All Apps</h1>
       <ul className="flex flex-col">
-        <li className="p-1 w-fit">
-          <text className="font-bold">MADC Clock: </text>
-          <a href="https://madc-clock.vercel.app" target="_blank">
+        <li className="p-4 w-fit">
+          <div>Minimalist Digital Clock:</div>
+          <a href="https://madc-clock.vercel.app" className="underline hover:text-blue-500" target="_blank">
             https://madc-clock.vercel.app
           </a>
         </li>
-        <li className="p-1 w-fit">
-        <text className="font-bold">Black Screen: </text>
-          <a href="https://blackscreenapp.vercel.app" target="_blank">
+        <li className="p-4 w-fit">
+          <div>Black Screen:</div>
+          <a href="https://blackscreenapp.vercel.app" className="underline hover:text-blue-500" target="_blank">
             https://blackscreenapp.vercel.app
           </a>
         </li>

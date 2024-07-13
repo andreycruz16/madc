@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
     <main className="flex flex-col items-center justify-center h-screen">
-      Contact Page
+      <div className="dark:text-gray-100">Contact Page</div>
     </main>
   );
 }

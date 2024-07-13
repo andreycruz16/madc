@@ -1,29 +1,39 @@
-// Import necessary modules
-import type { Metadata } from "next";
-import { Inter, Poppins } from "next/font/google";
+"use client";
 import "../styles/globals.css";
+import { Poppins } from "next/font/google";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
+import { useEffect, useState } from "react";
 
-// Define font configuration
-const inter = Poppins({ subsets: ["latin"], weight: "400" });
+const poppins = Poppins({ subsets: ["latin"], weight: "400" });
 
-// Define metadata for the page
-export const metadata: Metadata = {
-  title: "MADC",
-  description: "An MADC project",
-};
-
-// Define RootLayout component
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const [theme, setTheme] = useState("light");
+
+  useEffect(() => {
+    // Retrieve saved theme from localStorage or set default theme
+    const savedTheme = localStorage.getItem("theme") || "light";
+    setTheme(savedTheme);
+  }, []);
+
+  const toggleTheme = () => {
+    const newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+    localStorage.setItem("theme", newTheme); // Save theme to localStorage
+  };
+
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <Header />
+    <html lang="en" className={theme}>
+      <head>
+        <title>MADC</title>
+        <meta name="description" content="An MADC project" />
+      </head>
+      <body className={`${poppins.className} dark:bg-gray-700 transition duration-200`}>
+        <Header toggleTheme={toggleTheme} />
         {children}
         <Footer />
       </body>
