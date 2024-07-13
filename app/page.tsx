@@ -16,6 +16,12 @@ export default function Root() {
             https://blackscreenapp.vercel.app
           </a>
         </li>
+        <li className="p-4 w-fit">
+          <div>Birthdays:</div>
+          <a href="https://madc-birthdays.vercel.app" className="underline hover:text-blue-500" target="_blank">
+            https://madc-birthdays.vercel.app
+          </a>
+        </li>
       </ul>
     </main>
   );
