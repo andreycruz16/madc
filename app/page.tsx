@@ -22,7 +22,7 @@ export default function Root() {
           </a>
         </li>
         <li className="p-4 w-fit">
-          <div>Medicines List:</div>
+          <div>Medicine List:</div>
           <a href="https://madc-medicine.vercel.app/" className="underline hover:text-blue-500" target="_blank">
             https://madc-medicine.vercel.app/
           </a>
