@@ -4,7 +4,7 @@ export default function Root() {
       <h1 className="text-3xl uppercase font-bold p-4">All Apps</h1>
       <ul className="flex flex-col">
         <li className="p-4 w-fit">
-          <div>Minimalist Digital Clock:</div>
+          <div>DEVELOP: Minimalist Digital Clock:</div>
           <a href="https://madc-clock.vercel.app" className="underline hover:text-blue-500" target="_blank">
             https://madc-clock.vercel.app
           </a>
