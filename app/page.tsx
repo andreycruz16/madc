@@ -21,6 +21,12 @@ export default function Root() {
             https://madc-birthdays.vercel.app
           </a>
         </li>
+        <li className="p-4 w-fit">
+          <div>Medicines:</div>
+          <a href="https://madc-medicine.vercel.app/" className="underline hover:text-blue-500" target="_blank">
+            https://madc-medicine.vercel.app/
+          </a>
+        </li>
       </ul>
     </main>
   );
