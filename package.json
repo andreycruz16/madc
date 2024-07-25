@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "build-start": "next build && next start"
+    "build-start": "next build && next start",
+    "docker:build": "git rev-parse --short HEAD | xargs -I {} docker build -t madc:{} ."
+
   },
   "dependencies": {
     "next": "14.2.5",
