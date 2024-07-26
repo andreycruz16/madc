@@ -1,6 +1,7 @@
 # Commands to build and run
-# docker build -t madc .
-# docker run -d -p 3000:3000 madc
+# docker build -t andreycruz16/madc .
+# docker run -d -p 3001:3000 andreycruz16/madc
+# docker push andreycruz16/madc
 
 # Use the official Node.js image as the base image
 FROM node:22
