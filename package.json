@@ -9,7 +9,8 @@
     "lint": "next lint",
     "build-start": "next build && next start",
     "docker:build": "node docker-build.js",
-    "docker:push": "node docker-push.js"
+    "docker:push": "node docker-push.js",
+    "docker:build-push": "node docker-build.js && node docker-push.js"
   },
   "dependencies": {
     "next": "14.2.5",
