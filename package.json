@@ -8,8 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "build-start": "next build && next start",
-    "docker:build": "node build-docker.js",
-    "docker:push": "docker push andreycruz16/madc"
+    "docker:build": "node docker-build.js",
+    "docker:push": "node docker-push.js"
   },
   "dependencies": {
     "next": "14.2.5",
