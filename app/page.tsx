@@ -1,7 +1,7 @@
 export default function Root() {
   return (
     <main className="container mx-auto h-screen dark:text-gray-100">
-      <h1 className="text-3xl uppercase font-bold p-4">All Apps</h1>
+      <h1 className="text-3xl uppercase font-bold p-4">All Apps AAA</h1>
       <ul className="flex flex-col">
         <li className="p-4 w-fit">
           <div>Minimalist Digital Clock:</div>
