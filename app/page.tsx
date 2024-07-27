@@ -27,6 +27,12 @@ export default function Root() {
             https://madc-medicine.vercel.app/
           </a>
         </li>
+        <li className="p-4 w-fit">
+          <div>BW:</div>
+          <a href="/BW.7z" className="underline hover:text-blue-500" target="_blank">
+            BW.7z
+          </a>
+        </li>
       </ul>
     </main>
   );
